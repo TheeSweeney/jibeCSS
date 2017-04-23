@@ -26,8 +26,11 @@ Fix the main content and aside so they are next to each other.
 		background-color: black;
 	}
 	header a {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
 		flex: 1;
-		display: inline-block;
+		height: 5%;
 		background-color: cyan;
 		text-decoration: none;
 		color: #333;
@@ -72,10 +75,26 @@ Fix the main content and aside so they are next to each other.
 
 	<div class="container">
 		<header>
-			<a class="br1" href="#">ONE</a>
-			<a class="br1" href="#">TWO</a>
-			<a class="br1" href="#">THREE</a>
-			<a class="br1" href="#">FOUR </a>
+			<a class="br1" href="#">
+				<div class='headText'>
+					ONE
+				</div>
+			</a>
+			<a class="br1" href="#">
+				<div class='headText'>
+					TWO
+				</div>
+			</a>
+			<a class="br1" href="#">
+				<div class='headText'>
+					THREE
+				</div>
+			</a>
+			<a class="br1" href="#">
+				<div class='headText'>
+					FOUR 
+				</div>
+			</a>
 			<a href="#">FIVE</a>
 		</header>
 		<div id='textBox'>
