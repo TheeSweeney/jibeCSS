@@ -12,19 +12,22 @@ Fix the main content and aside so they are next to each other.
 		font-family: helvetica;
 	}
 	.container {
+		display: flex;
+		flex-direction: column;
 		width: 95%;
 		max-width: 1200px;
 		margin: 0 auto;
 	}
 
 	header {
-		width: 100%;
-		background-color: gray;
+		display: flex;
+		justify-content: space-between;
+		align-content: space-around;
+		background-color: black;
 	}
 	header a {
+		flex: 1;
 		display: inline-block;
-		height: 60px;
-		width: 20%;
 		background-color: cyan;
 		text-decoration: none;
 		color: #333;
@@ -51,6 +54,10 @@ Fix the main content and aside so they are next to each other.
 		background-color: pink
 	}
 
+	.br1 {
+		margin: 0 1px 0 0;
+	}
+
 	</style>
 </head>
 
@@ -58,27 +65,27 @@ Fix the main content and aside so they are next to each other.
 
 	<div class="container">
 		<header>
-			<a href="#">ONE</a>
-			<a href="#">TWO</a>
-			<a href="#">THREE</a>
-			<a href="#">FOUR </a>
+			<a class="br1" href="#">ONE</a>
+			<a class="br1" href="#">TWO</a>
+			<a class="br1" href="#">THREE</a>
+			<a class="br1" href="#">FOUR </a>
 			<a href="#">FIVE</a>
 		</header>
+		<div id='textBox'>
+			<div class="content">
+				<article>
+					Lorem ipsum Do incididunt irure et et consectetur consequat quis ullamco consectetur culpa consequat ut sed incididunt veniam tempor ullamco laborum in elit ut commodo et nisi anim magna cupidatat irure velit sit consequat labore ut eu consequat consectetur in voluptate do esse ut adipisicing eiusmod anim nisi voluptate Excepteur dolore deserunt consectetur voluptate aliqua ex consectetur aliqua deserunt dolor voluptate incididunt aliquip laborum nostrud ut sit ea et dolor voluptate cillum culpa velit eu dolore in officia fugiat veniam non elit ex in id sed Ut sunt occaecat in Duis eu in sunt in pariatur dolor dolore ut consectetur voluptate aliqua ex exercitation commodo nulla incididunt anim reprehenderit laboris id occaecat culpa cupidatat eiusmod nisi magna proident minim anim Ut ad officia ullamco in mollit tempor consectetur nulla esse cillum voluptate do in dolor incididunt ut dolore quis id nisi Excepteur eu deserunt sunt ullamco velit aliqua et labore aute labore eu consectetur minim ut consectetur dolor consequat officia nostrud.
+				</article>
 
-		<div class="content">
-			<article>
-				Lorem ipsum Do incididunt irure et et consectetur consequat quis ullamco consectetur culpa consequat ut sed incididunt veniam tempor ullamco laborum in elit ut commodo et nisi anim magna cupidatat irure velit sit consequat labore ut eu consequat consectetur in voluptate do esse ut adipisicing eiusmod anim nisi voluptate Excepteur dolore deserunt consectetur voluptate aliqua ex consectetur aliqua deserunt dolor voluptate incididunt aliquip laborum nostrud ut sit ea et dolor voluptate cillum culpa velit eu dolore in officia fugiat veniam non elit ex in id sed Ut sunt occaecat in Duis eu in sunt in pariatur dolor dolore ut consectetur voluptate aliqua ex exercitation commodo nulla incididunt anim reprehenderit laboris id occaecat culpa cupidatat eiusmod nisi magna proident minim anim Ut ad officia ullamco in mollit tempor consectetur nulla esse cillum voluptate do in dolor incididunt ut dolore quis id nisi Excepteur eu deserunt sunt ullamco velit aliqua et labore aute labore eu consectetur minim ut consectetur dolor consequat officia nostrud.
-			</article>
+				<article>
+					Lorem ipsum Do incididunt irure et et consectetur consequat quis ullamco consectetur culpa consequat ut sed incididunt veniam tempor ullamco laborum in elit ut commodo et nisi anim magna cupidatat irure velit sit consequat labore ut eu consequat consectetur in voluptate do esse ut adipisicing eiusmod anim nisi voluptate Excepteur dolore deserunt consectetur voluptate aliqua ex consectetur aliqua deserunt dolor voluptate incididunt aliquip laborum nostrud ut sit ea et dolor voluptate cillum culpa velit eu dolore in officia fugiat veniam non elit ex in id sed Ut sunt occaecat in Duis eu in sunt in pariatur dolor dolore ut consectetur voluptate aliqua ex exercitation commodo nulla incididunt anim reprehenderit laboris id occaecat culpa cupidatat eiusmod nisi magna proident minim anim Ut ad officia ullamco in mollit tempor consectetur nulla esse cillum voluptate do in dolor incididunt ut dolore quis id nisi Excepteur eu deserunt sunt ullamco velit aliqua et labore aute labore eu consectetur minim ut consectetur dolor consequat officia nostrud.
+				</article>
+			</div>
 
-			<article>
-				Lorem ipsum Do incididunt irure et et consectetur consequat quis ullamco consectetur culpa consequat ut sed incididunt veniam tempor ullamco laborum in elit ut commodo et nisi anim magna cupidatat irure velit sit consequat labore ut eu consequat consectetur in voluptate do esse ut adipisicing eiusmod anim nisi voluptate Excepteur dolore deserunt consectetur voluptate aliqua ex consectetur aliqua deserunt dolor voluptate incididunt aliquip laborum nostrud ut sit ea et dolor voluptate cillum culpa velit eu dolore in officia fugiat veniam non elit ex in id sed Ut sunt occaecat in Duis eu in sunt in pariatur dolor dolore ut consectetur voluptate aliqua ex exercitation commodo nulla incididunt anim reprehenderit laboris id occaecat culpa cupidatat eiusmod nisi magna proident minim anim Ut ad officia ullamco in mollit tempor consectetur nulla esse cillum voluptate do in dolor incididunt ut dolore quis id nisi Excepteur eu deserunt sunt ullamco velit aliqua et labore aute labore eu consectetur minim ut consectetur dolor consequat officia nostrud.
-			</article>
+			<aside>
+				Lorem ipsum Do quis laboris aliquip sint consectetur ut dolore occaecat laborum Ut non veniam enim laborum Ut reprehenderit sunt voluptate ex Duis officia elit.
+			</aside>
 		</div>
-
-		<aside>
-			Lorem ipsum Do quis laboris aliquip sint consectetur ut dolore occaecat laborum Ut non veniam enim laborum Ut reprehenderit sunt voluptate ex Duis officia elit.
-		</aside>
-
 	</div>
 
 </body>
