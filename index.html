@@ -37,10 +37,13 @@ Fix the main content and aside so they are next to each other.
 		background-color: lightgreen;
 	}
 
+	#textBox{
+		display: flex;
+	}
+
 	.content {
-		margin-right: 40px;
+		flex: 3;
 		padding: 10px;
-		width: 75%;
 		float: left;
 		background-color: lightgray;
 	}
@@ -49,7 +52,7 @@ Fix the main content and aside so they are next to each other.
 	}
 
 	aside {
-		width: 25%;
+		flex: 1;
 		float: right;
 		background-color: pink
 	}
